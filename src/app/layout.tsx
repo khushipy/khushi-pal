@@ -1,14 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
@@ -26,10 +22,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={geistSans.className}>
         <nav className="flex justify-center gap-8 py-6 text-lg font-bold bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 shadow-lg mb-8 animate-fade-in">
-          <a href="/" className="hover:underline">Home</a>
-          <a href="/about" className="hover:underline">About</a>
-          <a href="/projects" className="hover:underline">Projects</a>
-          <a href="/contact" className="hover:underline">Contact</a>
+          <Link href="/" className="hover:underline">Home</Link>
+          <Link href="/about" className="hover:underline">About</Link>
+          <Link href="/projects" className="hover:underline">Projects</Link>
+          <Link href="/contact" className="hover:underline">Contact</Link>
         </nav>
         <main className="max-w-3xl mx-auto px-4 sm:px-8 py-8 bg-white/80 rounded-3xl shadow-2xl border border-purple-200 animate-fade-in">
           {children}
