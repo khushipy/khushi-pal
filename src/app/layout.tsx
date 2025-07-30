@@ -8,8 +8,8 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Peiwen Portfolio",
-  description: "Personal multimedia portfolio by Peiwen",
+  title: "Khushi's Portfolio",
+  description: "Personal portfolio by Khushi",
 };
 
 export default function RootLayout({
@@ -20,18 +20,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.className} bg-[#d2b2a1] text-[#d2b2a1] font-mono flex items-center justify-center min-h-screen p-4`}
+        className={`${geistSans.className} bg-[#d2b2a1] text-[#d2b2a1] font-mono flex items-center justify-center min-h-screen p-2 sm:p-4`}
       >
-        <div className="w-[90%] bg-white rounded-2xl shadow-2xl border border-[#2c2205] p-10 m-6">
+        <div className="w-full max-w-6xl bg-white rounded-2xl shadow-2xl border border-[#2c2205] px-6 py-8 sm:px-10 sm:py-12">
           {/* Optional: Static Title Bar */}
-          <header className="w-full flex items-center justify-between px-6 py-4 mb-8  rounded-xl">
+          <header className="w-full flex items-center justify-between px-2 sm:px-6 py-4 mb-6 sm:mb-8 rounded-xl">
             {/* Left: Portfolio Title */}
-            <h1 className="text-2xl font-bold tracking-widest text-[#2c2205] font-mono">
+            <h1 className="text-lg sm:text-2xl font-bold tracking-widest text-[#2c2205] font-mono">
               PORTFOLIO
             </h1>
 
             {/* Right: Nav Links */}
-            <nav className="flex gap-8 text-[#2c2205] text-base font-medium font-mono pr-2">
+            <nav className="flex gap-3 sm:gap-8 text-[#2c2205] text-sm sm:text-base font-medium font-mono">
               <span className="cursor-pointer hover:underline">Experience</span>
               <span className="cursor-pointer hover:underline">Projects</span>
               <span className="cursor-pointer hover:underline">Contact</span>
