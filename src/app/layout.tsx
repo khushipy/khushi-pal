@@ -32,9 +32,9 @@ export default function RootLayout({
 
             {/* Right: Nav Links */}
             <nav className="flex gap-3 sm:gap-8 text-[#2c2205] text-sm sm:text-base font-medium font-mono">
-              <span className="cursor-pointer hover:underline">Experience</span>
-              <span className="cursor-pointer hover:underline">Projects</span>
-              <span className="cursor-pointer hover:underline">Contact</span>
+              <a href="#experience" className="cursor-pointer hover:underline transition-colors hover:text-yellow-600">Experience</a>
+              <a href="#projects" className="cursor-pointer hover:underline transition-colors hover:text-yellow-600">Projects</a>
+              <a href="#contact" className="cursor-pointer hover:underline transition-colors hover:text-yellow-600">Contact</a>
             </nav>
           </header>
 
