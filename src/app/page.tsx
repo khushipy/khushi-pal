@@ -26,7 +26,7 @@ export default function Home() {
               SOFTWARE DEVELOPER
             </h1>
             <p className="font-mono text-[#2c2205] leading-relaxed text-sm">
-              Hello! I'm{" "}
+            Hello! I&apos;m{" "}
               <span className="text-yellow-600 font-semibold">Khushi</span>, a
               final-year B.Tech undergrad at Galgotias College of Engineering &
               Technology, majoring in Computer Science and Engineering (Artificial
@@ -327,11 +327,11 @@ export default function Home() {
         {/* CONTACT ME */}
         <section id="contact" className="bg-gray-100 rounded-xl shadow-md border border-gray-200 p-6 text-center hover:bg-gray-200 active:bg-gray-300 transition-colors cursor-pointer">
           <h2 className="text-lg sm:text-xl font-bold text-[#2c2205] mb-6 tracking-wide">
-            LET'S COLLABORATE
+          LET&apos;S COLLABORATE
           </h2>
           <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg p-8 max-w-2xl mx-auto">
             <p className="text-gray-700 mb-6 text-base">
-              Interested in working together? Let's build something amazing!
+            Interested in working together? Let&apos;s build something amazing!
             </p>
             
             <a
